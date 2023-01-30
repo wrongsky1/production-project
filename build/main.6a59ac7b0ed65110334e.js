@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("Webpack config install"),document.body.innerHTML="<div>Hello world!</div>"})();
