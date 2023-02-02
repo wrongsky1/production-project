@@ -1,11 +1,5 @@
 
-# dependencies
-./node_modules
-
-# testing
-./coverage
-
-# production
-./build
-
+/.vscode
+/build
+/node_modules
 
