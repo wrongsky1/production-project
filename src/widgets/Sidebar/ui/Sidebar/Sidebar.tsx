@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+/* eslint-disable i18next/no-literal-string */
 import { classNames } from 'shared/lib/classNames/classNames';
-import { LangSwitcher } from 'widgets/LangSwitcher';
+import { useState } from 'react';
+import Button from 'shared/ui/Button/Button';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
+import { LangSwitcher } from 'widgets/LangSwitcher';
 import cls from './Sidebar.module.scss';
 
-interface PropsSidebar {
-    className?: string,
+interface SidebarProps {
+    className?: string;
 }
 
-const Sidebar = ({ className }: PropsSidebar) => {
+export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
 
     const onToggle = () => {
@@ -16,8 +18,16 @@ const Sidebar = ({ className }: PropsSidebar) => {
     };
 
     return (
-        <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
-            <button type="button" onClick={onToggle}>123</button>
+        <div
+            data-testid="sidebar"
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
+        >
+            <Button
+                data-testid="sidebar-toggle"
+                onClick={onToggle}
+            >
+                toggle
+            </Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher className={cls.lang} />
@@ -25,5 +35,3 @@ const Sidebar = ({ className }: PropsSidebar) => {
         </div>
     );
 };
-
-export default Sidebar;
