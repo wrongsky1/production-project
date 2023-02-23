@@ -5,6 +5,8 @@
 /node_modules
 /.pnp
 .pnp.js
+.loki/report.html
+.loki/report.json
 
 # testing
 /coverage
