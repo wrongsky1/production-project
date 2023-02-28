@@ -23,12 +23,16 @@
       "id": "1",
       "username": "admin",
       "password": "123"
-    },
-    {
-      "id": "2",
-      "username": "Mika",
-      "password": "1234"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "John",
+    "lastname": "Vik",
+    "age": 26,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://mobimg.b-cdn.net/v3/fetch/5b/5b9144ae398008e0167bc7c1d6156397.jpeg"
+  }
 }
