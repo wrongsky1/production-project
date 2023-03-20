@@ -102,6 +102,12 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "vfdsavf",
+      "id": "A_gNzz7"
     }
   ],
   "users": [
@@ -120,14 +126,28 @@
       "avatar": "https://media.kg-portal.ru/images/strangerthanfiction/strangerthanfiction_5.jpg"
     }
   ],
-  "profile": {
-    "first": "jgh",
-    "lastname": "asf",
-    "age": 465,
-    "currency": "RUB",
-    "country": "Belarus",
-    "city": "Moscow",
-    "username": "admin213",
-    "avatar": "https://www.dmarge.com/wp-content/uploads/2022/07/keanu-reeves-john-wick.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Jim",
+      "lastname": "Vik",
+      "age": 31,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin1",
+      "avatar": "https://www.dmarge.com/wp-content/uploads/2022/07/keanu-reeves-john-wick.jpg"
+    },
+    {
+      "id": "2",
+      "first": "User",
+      "lastname": "Userovich",
+      "age": 4,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "user1",
+      "avatar": "https://media.kg-portal.ru/images/strangerthanfiction/strangerthanfiction_5.jpg"
+    }
+  ]
 }
