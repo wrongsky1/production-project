@@ -6,8 +6,8 @@ import { useInfiniteScroll } from 'shared/lib/hooks/useInfiniteScroll/useInfinit
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useLocation } from 'react-router-dom';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { getScrollSaveByPath, scrollSaveActions } from 'features/ScrollSave';
 import { useSelector } from 'react-redux';
+import { getScrollSaveByPath, scrollSaveActions } from 'features/ScrollSave';
 import { StateSchema } from 'app/providers/StoreProvider';
 import { useThrottle } from 'shared/lib/hooks/useThrottle/useThrottle';
 import cls from './Page.module.scss';
@@ -52,7 +52,7 @@ export const Page = memo((props: PageProps) => {
             onScroll={onScroll}
         >
             {children}
-            <div ref={triggerRef} />
+            {onScrollEnd ? <div className={cls.trigger} ref={triggerRef} /> : null}
         </section>
     );
 });
