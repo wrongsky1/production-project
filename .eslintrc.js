@@ -50,7 +50,7 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to', 'size', 'label'],
+                ignoreAttribute: ['data-testid', 'to', 'size', 'label', 'target'],
             },
         ],
         'jsx-a11y/click-events-have-key-events': 'off',
