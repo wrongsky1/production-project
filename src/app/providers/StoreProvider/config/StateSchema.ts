@@ -14,7 +14,7 @@ import {
     ArticleDetailsCommentsSchema,
     ArticleDetailsPageSchema,
     ArticleDetailsRecommendationsSchema,
-} from 'pages/ArticleDetailsPage';
+} from 'shared/api/ArticleDetailsPage';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 import { ScrollSaveSchema } from 'features/ScrollSave';
