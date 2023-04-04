@@ -22,6 +22,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
+        'rmd-plugin',
     ],
     rules: {
         'max-len': ['error', {
@@ -59,6 +60,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
         'no-param-reassign': 'off',
         'no-undef': 'warn',
+        'rmd-plugin/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,

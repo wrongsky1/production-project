@@ -1,8 +1,8 @@
 import { userActions } from 'entities/User';
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
-import { ValidateProfileError } from 'entities/Profile';
+import { Country } from '../../../../Country';
+import { Currency } from '../../../../Currency';
+import { ValidateProfileError } from '../../../../Profile';
 import { updateProfileData } from './updateProfileData';
 
 const data = {
