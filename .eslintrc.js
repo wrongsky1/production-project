@@ -51,7 +51,18 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to', 'size', 'label', 'target'],
+                ignoreAttribute: [
+                    'data-testid',
+                    'to',
+                    'size',
+                    'label',
+                    'target',
+                    'justify',
+                    'align',
+                    'direction',
+                    'gap',
+                    'max',
+                ],
             },
         ],
         'jsx-a11y/click-events-have-key-events': 'off',
@@ -61,6 +72,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'warn',
         'rmd-plugin/path-checker': 'error',
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: true,
