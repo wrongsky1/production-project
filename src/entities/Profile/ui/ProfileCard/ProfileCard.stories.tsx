@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Country } from 'entities/Country';
+import { Currency } from 'entities/Currency';
 import avatar from 'shared/assets/tests/storybook.jpg';
-import { Country } from '../../../Country';
-import { Currency } from '../../../Currency';
 import { ProfileCard } from './ProfileCard';
 
 export default {
@@ -20,10 +20,10 @@ Primary.args = {
     data: {
         username: 'admin',
         age: 22,
-        country: Country.Kazakhstan,
-        lastname: 'Dhow',
-        first: 'Kan',
-        city: 'Astana',
+        country: Country.Ukraine,
+        lastname: 'ulbi tv',
+        first: 'asd',
+        city: 'asf',
         currency: Currency.USD,
         avatar,
     },
