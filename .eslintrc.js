@@ -64,6 +64,7 @@ module.exports = {
                     'gap',
                     'max',
                     'as',
+                    'border',
                 ],
             },
         ],
