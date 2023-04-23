@@ -2,7 +2,7 @@
 /* eslint-disable no-restricted-globals */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './PageError.module.scss';
 
 interface PropsPageError {
