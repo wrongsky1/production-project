@@ -74,7 +74,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
         'no-param-reassign': 'off',
         'no-undef': 'warn',
-        'rmd-plugin/path-checker': 'error',
+        'rmd-plugin/path-checker': ['error', { alias: '@' }],
         'arrow-body-style': 'off',
     },
     globals: {
