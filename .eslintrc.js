@@ -75,7 +75,12 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'warn',
         'rmd-plugin/path-checker': ['error', { alias: '@' }],
-        'rmd-plugin/public-api-imports': ['error', { alias: '@' }],
+        'rmd-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.', '**/*.story.', '**/StoreDecorator.tsx'],
+            }],
         'arrow-body-style': 'off',
     },
     globals: {
