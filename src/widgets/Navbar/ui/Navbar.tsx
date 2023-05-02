@@ -11,7 +11,6 @@ import {
     userActions,
 } from '@/entities/User';
 import { Text, TextTheme } from '@/shared/ui/Text';
-import { Avatar } from '@/shared/ui/Avatar';
 import { HStack } from '@/shared/ui/Stack';
 import { NotificationButton } from '@/features/notificationButton';
 import { AvatarDropdown } from '@/features/avatarDropdown';
