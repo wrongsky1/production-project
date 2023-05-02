@@ -75,6 +75,13 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'warn',
         'rmd-plugin/path-checker': ['error', { alias: '@' }],
+        // 'rmd-plugin/layer-imports': [
+        //     'error',
+        //     {
+        //         alias: '@',
+        //         ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+        //     },
+        // ],
         'rmd-plugin/public-api-imports': [
             'error',
             {
