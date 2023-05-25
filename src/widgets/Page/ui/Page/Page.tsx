@@ -6,14 +6,14 @@ import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useInfiniteScroll } from '@/shared/lib/hooks/useInfiniteScroll/useInfiniteScroll';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { getScrollSaveByPath, scrollSaveActions } from '@/features/ScrollSave';
+import { scrollSaveActions, getScrollSaveByPath } from '@/features/ScrollSave';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { StateSchema } from '@/app/providers/StoreProvider';
 import { useThrottle } from '@/shared/lib/hooks/useThrottle/useThrottle';
 import cls from './Page.module.scss';
 import { TestProps } from '@/shared/types/tests';
 
-interface PageProps extends TestProps{
+interface PageProps extends TestProps {
     className?: string;
     children: ReactNode;
     onScrollEnd?: () => void;
