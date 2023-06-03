@@ -527,7 +527,7 @@
       ]
     },
     {
-      "id": "18",
+      "id": "19",
       "title": "Научная статья - Биология",
       "subtitle": "БиологиЯ",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Biology-0001.jpg/600px-Biology-0001.jpg",
@@ -634,6 +634,15 @@
         "MANAGER"
       ],
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "profile": [
@@ -658,6 +667,17 @@
       "city": "Moscow",
       "username": "user1",
       "avatar": "https://media.kg-portal.ru/images/strangerthanfiction/strangerthanfiction_5.jpg"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
+      "age": 465,
+      "currency": "EUR",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "testuser",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "article-ratings": [
