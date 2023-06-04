@@ -8,6 +8,8 @@ module.exports = {
         'plugin:react/recommended',
         'airbnb',
         'plugin:i18next/recommended',
+        'plugin:storybook/recommended',
+        'prettier',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -26,17 +28,13 @@ module.exports = {
         'unused-imports',
     ],
     rules: {
-        'max-len': ['error', {
-            ignoreComments: true,
-            code: 150,
-        }],
-        'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props': [2, 4],
         'unused-imports/no-unused-imports': 'error',
-        indent: [2, 4],
-        'react/jsx-filename-extension': [2, {
-            extensions: ['.js', '.jsx', '.tsx'],
-        }],
+        'react/jsx-filename-extension': [
+            2,
+            {
+                extensions: ['.js', '.jsx', '.tsx'],
+            },
+        ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'off',
@@ -48,12 +46,12 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'react/no-array-index-key': 'off',
         'i18next/no-literal-string': [
             'error',
             {
                 markupOnly: true,
                 ignoreAttribute: [
+                    'as',
                     'role',
                     'data-testid',
                     'to',
@@ -62,35 +60,55 @@ module.exports = {
                     'target',
                     'justify',
                     'align',
+                    'border',
                     'direction',
                     'gap',
                     'max',
-                    'as',
-                    'border',
                 ],
             },
         ],
-        'jsx-a11y/click-events-have-key-events': 'off',
+        'max-len': [
+            'error',
+            {
+                ignoreComments: true,
+                code: 125,
+            },
+        ],
         'jsx-a11y/no-static-element-interactions': 'off',
-        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        // Checks rules of Hooks
+        'react-hooks/exhaustive-deps': 'error',
+        // Checks effect dependencies,
         'no-param-reassign': 'off',
-        'no-undef': 'warn',
-        'rmd-plugin/path-checker': ['error', { alias: '@' }],
-        // 'rmd-plugin/layer-imports': [
-        //     'error',
-        //     {
-        //         alias: '@',
-        //         ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
-        //     },
-        // ],
+        'no-undef': 'off',
+        'react/no-array-index-key': 'off',
+        'arrow-body-style': 'off',
+        'rmd-plugin/path-checker': [
+            'error',
+            {
+                alias: '@',
+            },
+        ],
+        'rmd-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'rmd-plugin/public-api-imports': [
             'error',
             {
                 alias: '@',
-                testFilesPatterns: ['**/*.test.', '**/*.story.', '**/StoreDecorator.tsx'],
-            }],
-        'arrow-body-style': 'off',
+                testFilesPatterns: [
+                    '**/*.test.*',
+                    '**/*.story.*',
+                    '**/StoreDecorator.tsx',
+                ],
+            },
+        ],
+        'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
     },
     globals: {
         __IS_DEV__: true,
