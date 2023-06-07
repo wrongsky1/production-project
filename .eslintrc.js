@@ -28,7 +28,13 @@ module.exports = {
         'unused-imports',
     ],
     rules: {
-        'unused-imports/no-unused-imports': 'error',
+        "react/no-unstable-nested-components": [
+            "error",
+            {
+              "allowAsProps": true,
+              "customValidators": [] /* optional array of validators used for propTypes validation */
+            }
+          ],
         'react/jsx-filename-extension': [
             2,
             {
