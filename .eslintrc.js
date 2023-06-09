@@ -70,6 +70,7 @@ module.exports = {
                     'direction',
                     'gap',
                     'max',
+                    'feature',
                 ],
             },
         ],
