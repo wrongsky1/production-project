@@ -614,7 +614,7 @@
             },
             "avatar": "https://media.kg-portal.ru/images/strangerthanfiction/strangerthanfiction_5.jpg",
             "jsonSettings": {
-                "theme": "app_light_theme",
+                "theme": "app_dark_theme",
                 "isArticlesPageWasOpened": true
             }
         },

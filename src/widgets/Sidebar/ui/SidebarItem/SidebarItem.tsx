@@ -5,8 +5,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { getUserAuthData } from '@/entities/User';
 import { SidebarItemType } from '../../model/types/sidebar';
 import cls from './SidebarItem.module.scss';
-import AppLink from '@/shared/ui/AppLink/AppLink';
-import { AppLinkTheme } from '@/shared/ui/AppLink';
+import { AppLink, AppLinkTheme } from '@/shared/ui/deprecated/AppLink';
 
 interface SidebarItemProps {
     item: SidebarItemType;
@@ -28,9 +27,7 @@ export const SidebarItem = memo(({ item, collapsed }: SidebarItemProps) => {
             className={classNames(cls.item, { [cls.collapsed]: collapsed })}
         >
             <item.Icon className={cls.icon} />
-            <span className={cls.link}>
-                {t(item.text)}
-            </span>
+            <span className={cls.link}>{t(item.text)}</span>
         </AppLink>
     );
 });
